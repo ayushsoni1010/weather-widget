@@ -1,7 +1,13 @@
-import React from "react";
+import Weather from "@/pages/weather";
+import { Provider } from "react-redux";
+import { store } from "@/store";
 
 function App() {
-  return <div></div>;
+  return (
+    <Provider store={store}>
+      <Weather />
+    </Provider>
+  );
 }
 
 export default App;
