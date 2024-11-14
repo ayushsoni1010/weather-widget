@@ -33,4 +33,7 @@ const weatherSlice = createSlice({
   },
 });
 
+export const { setLocation, setWeather, setPreviousSearch, setError } =
+  weatherSlice.actions;
+
 export default weatherSlice.reducer;
